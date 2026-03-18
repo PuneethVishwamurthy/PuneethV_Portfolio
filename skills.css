@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+  background-color: black;
+  overflow-x: hidden;
+}
+
+nav {
+ display: flex;
+  justify-content: space-between;   
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  padding: 0 5vw;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.462);
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0);
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: white;
+}
+
+.nav-logo span {
+  color: #4f7dff;          
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;        
+  padding: 0;              
+}
+
+.nav-links li a {
+  color:rgba(255, 255, 255, 0.482);
+  padding: 0.4rem 1.1rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links li .cont{
+  color: #4f7dff;
+  font-weight:900;
+}
+
+.nav-links li a:hover {
+  color: #4f7dff;
+}
+
+.cont {
+  border: solid 2px white;
+  border-radius: 8px;
+  padding: 0.45rem 1.1rem ;
+  background: white;
+  color: black ;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.cont:hover {
+  color: white !important;
+  background: black;
+  border-color: #4f7dff;
+  box-shadow: 0 0 15px rgba(79, 125, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.cont:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 800px) {
+  .content {
+    grid-template-columns: 1fr;   
+    padding: 3rem 6vw;
+    text-align: center;
+  }
+
+  .profile_pic {
+    order: -1;
+  }
+
+  .badge { margin: 0 auto 0.75rem; }
+  .subtitle { margin: 0.75rem auto; }
+  .home-btns { justify-content: center; }
+  .stats { justify-content: center; }
+
+  .chip-1, .chip-2, .chip-3 { display: none; }
+
+  nav {
+    padding: 0 4vw;
+  }
+
+  .nav-links li a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.72rem;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.462);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  margin: 0px;
+}
+
+footer p span {
+  color: #4f7dff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.tech-stack{
+    width: 100%;
+  min-height: 80vh;
+  background: black;
+  padding: 5rem 6vw;
+}
+
+.tech-stack h1{
+    color: white;
+}
+
+.eyebrow {
+  color: #4f7dff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  margin-bottom: 0.75rem;
+}
+
+.tech-stack h1 {
+  color: white;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack h1 span {
+  color: #4f7dff;
+}
+
+.desc {
+  color: #8888a0;
+  font-size: 0.97rem;
+  line-height: 1.75;
+  max-width: 600px;
+  font-weight: 300;
+  margin-bottom: 3.5rem;
+}
+
+.category {
+  margin-bottom: 3rem;
+}
+
+.category-label {
+  color: #4f7dff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.65rem;
+  text-align: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-card {
+  background: #111118;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  width: 175px;
+  padding: 1.5rem 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: spa;
+  align-items: center;
+  gap: 0.6rem;
+  transition: border-color 0.25s, transform 0.25s;
+  cursor: default;
+}
+
+.skill-card:hover {
+  border-color: rgba(79, 125, 255, 0.4);
+  transform: translateY(-4px);
+}
+
+.skill-icon {
+  width: 62px;
+  height: 62px;
+  background: #828caf58;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+
+.skill-icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.skill-name {
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.skill-level {
+  color: #8888a0;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}

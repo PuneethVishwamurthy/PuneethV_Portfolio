@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puneeth V's Portfolio</title>
+    <link rel="stylesheet" href="./project.css" />
+  </head>
+  <body>
+    <nav>
+      <h1 class="nav-logo">PV<span>.</span></h1>
+      <ul class="nav-links">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./skills.html">SKILLS</a></li>
+        <li><a href="./project.html">PROJECT</a></li>
+        <li><a href="./contact.html" class="cont">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div class="projects-section">
+      <h2 class="projects-title">My <span>Projects</span></h2>
+      <p class="projects-subtitle">Here are the projects I have worked on</p>
+
+      <!-- Yarntale card -->
+      <div class="project-card">
+        <!-- Title now sits at the top of the card, above images -->
+        <h3 class="project-name">29Yarntale -<span> Profit Tracker</span></h3>
+
+        <div class="project-body">
+          <div class="project-image">
+            <img src="./image/Screenshot 2026-03-18 092440.png" alt="yarntale login page" />
+            <img src="./image/Screenshot 2026-03-18 232542.jpg" alt="yarntale dashboard" />
+          </div>
+
+          <div class="project-info">
+            <div class="tech-stack">
+              <span class="badge">Python</span>
+              <span class="badge">Flask</span>
+              <span class="badge">Firebase</span>
+              <span class="badge">HTML/CSS</span>
+              <span class="badge">Vercel</span>
+            </div>
+
+            <p class="project-desc">
+              This is a web app i built for a real business called 29Yarntale
+              which is a crochet brand. The app tracks all the products they sell
+              and calculates the profit after removing material cost and shipping
+              cost. It also splits the profit between 3 workers (Nisha, Moksha and
+              Madhu) automatically based on who made the product. The data is
+              stored in Firebase Firestore and the app is deployed on Vercel.
+              There is also a login system so only the owner can add or delete
+              products. There is a demo account too which is read only.
+            </p>
+
+            <p style="color: white; margin-bottom: 8px; font-size: 14px">Features :</p>
+            <ul class="features-list">
+              <li>Login system with admin and demo accounts</li>
+              <li>Add, edit and delete products</li>
+              <li>Auto calculates profit for each product</li>
+              <li>Splits profit between 3 workers automatically</li>
+              <li>Shows total revenue, profit and average profit</li>
+              <li>Notes section for order tracking</li>
+              <li>Data stored in Firebase</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="https://yarntale.vercel.app/" target="_blank" class="live-btn">Check the Webpage</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Lip To Speech card -->
+      <div class="project-card">
+        <!-- Title now sits at the top of the card, above images -->
+        <h3 class="project-name">Lip To Speech<span> Recognition System</span></h3>
+
+        <div class="project-body">
+          <div class="project-image">
+            <img src="./image/ltp1.jpg" alt="lip to speech demo 1" />
+            <img src="./image/ltp2.jpg" alt="lip to speech demo 2" />
+          </div>
+
+          <div class="project-info">
+            <div class="tech-stack">
+              <span class="badge">Python</span>
+              <span class="badge">Flask</span>
+              <span class="badge">Google TTS</span>
+              <span class="badge">HTML/CSS</span>
+            </div>
+
+            <p class="project-desc">
+              A deep learning-based application that interprets human lip
+              movements from video input and converts them into audible speech in
+              real time. The system bridges the gap between visual communication
+              and audio output, making it a powerful assistive technology for
+              individuals with speech or hearing impairments. The project
+              leverages computer vision and sequence modeling techniques to
+              analyze lip motion patterns and map them to corresponding speech
+              sounds. The recognized text is then converted to natural-sounding
+              audio using Google Text-to-Speech (gTTS), creating a seamless
+              lip-to-audio pipeline.
+            </p>
+
+            <p style="color: white; margin-bottom: 8px; font-size: 14px">Features :</p>
+            <ul class="features-list">
+              <li>Detects and isolates the lip region from video frames using computer vision</li>
+              <li>Processes lip movements and predicts spoken words/phrases in real time</li>
+              <li>Accessible UI built with Flask, runs in any browser</li>
+              <li>Works without any microphone or audio input</li>
+              <li>Leverages gTTS multi-language capabilities</li>
+              <li>Clean, modular codebase written entirely in Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Built by <span>Puneeth V</span></p>
+    </footer>
+  </body>
+</html>
